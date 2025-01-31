@@ -26,12 +26,21 @@ class TicketDetailsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Text(ticket.title), //TODO:verificar o theme
+            Hero(
+                //HERO não definido no componente anterior
+                tag: 'ticket_$ticketId',
+                child: Material(
+                  color: Colors.transparent,
+                  child: Text(
+                    ticket.title,
+                    style: Theme.of(context).textTheme.headlineLarge,
+                  ), //TODO:verificar o theme
+                )),
             const SizedBox(height: 10),
             Text(ticket.description),
             const SizedBox(height: 10),
             Text(
-              'Status: $ticket.status',
+              'Status: ${ticket.status}',
               style: const TextStyle(fontWeight: FontWeight.bold),
             ),
           ],
