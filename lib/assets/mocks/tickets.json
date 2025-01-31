@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "Erro na API",
+      "description": "Usuário relatou erro ao acessar endpoint X.",
+      "status": "Aberto"
+    },
+    {
+      "id": 2,
+      "title": "Ajuste no layout",
+      "description": "Botão 'Salvar' está desalinhado na tela de perfil.",
+      "status": "Em andamento"
+    },
+    {
+      "id": 3,
+      "title": "Bug no login",
+      "description": "Usuário não consegue redefinir senha.",
+      "status": "Fechado"
+    }
+  ]
+  
