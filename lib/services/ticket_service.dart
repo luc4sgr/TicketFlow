@@ -7,7 +7,7 @@ class TicketService {
     await Future.delayed(const Duration(seconds: 2));
     //Carrega Json local como mock
     final String response =
-        await rootBundle.loadString('assets/mocks/tickets.json');
+        await rootBundle.loadString('lib/assets/mocks/tickets.json');
     final List<dynamic> data = jsonDecode(response);
 
     return data.map((e) => Ticket.fromJson(e)).toList();
