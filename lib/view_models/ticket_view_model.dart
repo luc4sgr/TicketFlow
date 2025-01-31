@@ -15,7 +15,7 @@ class TicketViewModel extends ChangeNotifier {
     notifyListeners();
 
     try {
-      _tickets = await _ticketService.fetchTicket();
+      _tickets = await _ticketService.fetchTickets();
     } catch (e) {
       _tickets = [];
     }
